@@ -1,0 +1,23 @@
+{
+  "components": [
+    {
+      "type": "textarea",
+      "id": "messageBox",
+      "placeholder": "Your message here...",
+      "rows": 8,
+      "cols": 50
+    },
+    {
+      "type": "button",
+      "id": "populateButton",
+      "label": "Auto-Populate",
+      "action": "populateTextarea"
+    }
+  ],
+  "actions": {
+    "populateTextarea": {
+      "target": "messageBox",
+      "message": "This is an auto-populated message from the JSON configuration!"
+    }
+  }
+}
